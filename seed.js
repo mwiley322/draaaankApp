@@ -4,4 +4,5 @@ var drinkList = [];
 
 drinkList.push({
   name : 'Vesper',
-})
+  glass : 'Cocktail'
+});
