@@ -1,0 +1,22 @@
+{
+  "name": "draaaankapp",
+  "description": "A drink app CRUDing drinks",
+  "main": "server.js",
+  "authors": [
+    "Megan Wiley",
+    "Ali Emami"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "drinks",
+    "angular"
+  ],
+  "homepage": "https://github.com/mwiley322/draaaankApp",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
