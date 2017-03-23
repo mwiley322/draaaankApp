@@ -12,8 +12,8 @@ function index(req, res) {
 
 // GET /api/drinks/:id
 function show(req, res) {
-  var drinkId = req.params.id
-  console.log('drink to show: ', req.params);
+  var drinkId = req.params.id;
+  console.log('drink to show: ', drinkId);
   db.Drink.findById(drinkId, function(err, foundDrink) {
     if (err) {
       res.sendStatus(204);

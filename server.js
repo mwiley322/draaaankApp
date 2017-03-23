@@ -34,10 +34,10 @@ app.get('/api', controllers.api.index);
 
 //DRINK CONTROLLERS
 app.get('/api/drinks', controllers.drinks.index);
-app.get('/api/drinks/:drinkId', controllers.drinks.show);
+app.get('/api/drinks/:id', controllers.drinks.show);
 app.post('/api/drinks', controllers.drinks.create);
-app.delete('/api/drinks/:drinkId', controllers.drinks.destroy);
-app.put('/api/drinks/:drinkId', controllers.drinks.update);
+app.delete('/api/drinks/:id', controllers.drinks.destroy);
+app.put('/api/drinks/:id', controllers.drinks.update);
 
 // ALL OTHER ROUTES (ANGULAR HANDLES)
 // redirect all other paths to index
