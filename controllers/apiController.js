@@ -11,7 +11,7 @@ function index(req, res) {
         method: 'GET', path: '/api/drinks', description: 'Lists all drinks within the database'
       },
       {
-        method: 'GET', path: '/api/drinks/:id', description: 'Gets a single drink based on parameters'
+        method: 'GET', path: '/api/drinks/:id', description: 'Gets a single drink based on id parameter'
       },
       {
         method: 'POST', path: '/api/drinks', description: 'Creates a single new drink'
