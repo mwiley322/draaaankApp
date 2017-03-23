@@ -5,7 +5,6 @@ var DrinkSchema = new Schema({
   name : String,
   img : String,
   ingredients : [ String ],
-  origin : String,
   glass : String,
   garnish : String
 });
