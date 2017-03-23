@@ -1,0 +1,29 @@
+{
+  "name": "draaaankapp",
+  "version": "1.0.0",
+  "description": "A drink app CRUDing drinks",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mwiley322/draaaankApp.git"
+  },
+  "keywords": [
+    "drinks",
+    "angular"
+  ],
+  "author": "Megan Wiley, Ali Emami",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mwiley322/draaaankApp/issues"
+  },
+  "homepage": "https://github.com/mwiley322/draaaankApp#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "mongoose": "^4.9.1"
+  }
+}
