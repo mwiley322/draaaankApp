@@ -9,7 +9,7 @@ var DrinkSchema = new Schema({
   garnish : String
 });
 
-var DrinkSchema = mongoose.model('Drink', DrinkSchema);
+var Drink = mongoose.model('Drink', DrinkSchema);
 
 
 module.exports = Drink;

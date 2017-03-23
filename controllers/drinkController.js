@@ -38,6 +38,7 @@ function update(req, res) {
   var drinkId = req.params.id; //id to search
   var drinkToUpdate = req.body; //form data to update
   db.Drink.findByIdAndUpdate(drinkId, drinkToUpdate, {new: true}, function(err, updatedDrink) {
+    if (err) { console.log('err!: ', err);
       res.sendStatus(204);
     } else {
       console.log(updatedDrink);
@@ -45,6 +46,7 @@ function update(req, res) {
     }
   });
 }
+
 
 // DELETE /api/drinks/:id
 function destroy(req, res) {
