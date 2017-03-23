@@ -7,7 +7,7 @@ drinkList.push({
   glass : 'Cocktail',
   garnish : '1 Lemon Peel',
   img: 'http://fanfood.com/wp-content/uploads/2013/08/VesperMartini.jpg',
-  ingredients : {
+  ingredients : [{
                   name: 'Plymouth gin',
                   amount: '3 oz'
                 }, {
@@ -16,29 +16,26 @@ drinkList.push({
                 }, {
                   name: 'Lillet Blanc',
                   amount: '.5 oz'
-                }
+                }]
 });
 drinkList.push({
   name : 'Old Fashioned',
   glass : 'Old Fashioned',
   garnish : '1 Fresh Orange Wheel and 1 Cherry',
   img: 'http://cdn.liquor.com/wp-content/uploads/2012/09/bourbon-old-fashioned.jpg',
-  ingredients : {
+  ingredients : [{
                   name: 'Angostura bitters',
                   amount: '4 dashes'
                 }, {
                   name: 'sugar',
                   amount: '1 tsp'
                 }, {
-                  name: 'orange wheel',
-                  amount: '1'
-                }, {
                   name: 'club soda',
                   amount: '1 splash'
                 }, {
                   name: 'Bourbon',
                   amount: '2 oz'
-                }
+                }]
 });
 
 db.Drink.remove({}, function(err, drinks) {
