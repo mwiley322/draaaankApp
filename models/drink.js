@@ -1,12 +1,14 @@
 var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
+var Ingredient = require('./ingredient');
+
 var DrinkSchema = new Schema({
   name : String,
   img : String,
-  ingredients : [ String ],
+  ingredients : [ Ingredient.schema ],
   glass : String,
-  garnish : String
+  garnish : [ String ]
 });
 
 var Drink = mongoose.model('Drink', DrinkSchema);
