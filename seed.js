@@ -5,16 +5,40 @@ var drinkList = [];
 drinkList.push({
   name : 'Vesper',
   glass : 'Cocktail',
-  ingredients : ['3 oz. Plymouth gin', '1 oz. Absolut Vodka', '.5 Lillet Blanc'],
   garnish : '1 Lemon Peel',
-  img: 'http://fanfood.com/wp-content/uploads/2013/08/VesperMartini.jpg'
+  img: 'http://fanfood.com/wp-content/uploads/2013/08/VesperMartini.jpg',
+  ingredients : {
+                  name: 'Plymouth gin',
+                  amount: '3 oz'
+                }, {
+                  name: 'Absolut Vodka',
+                  amount: '1 oz'
+                }, {
+                  name: 'Lillet Blanc',
+                  amount: '.5 oz'
+                }
 });
 drinkList.push({
   name : 'Old Fashioned',
   glass : 'Old Fashioned',
-  ingredients : ['4 dashes of Angostura bitters', ' 1 tsp of sugar', ' 1 orange wheel', '1 splash of club soda', '2 oz of Bourbon'],
   garnish : '1 Fresh Orange Wheel and 1 Cherry',
-  img: 'http://cdn.liquor.com/wp-content/uploads/2012/09/bourbon-old-fashioned.jpg'
+  img: 'http://cdn.liquor.com/wp-content/uploads/2012/09/bourbon-old-fashioned.jpg',
+  ingredients : {
+                  name: 'Angostura bitters',
+                  amount: '4 dashes'
+                }, {
+                  name: 'sugar',
+                  amount: '1 tsp'
+                }, {
+                  name: 'orange wheel',
+                  amount: '1'
+                }, {
+                  name: 'club soda',
+                  amount: '1 splash'
+                }, {
+                  name: 'Bourbon',
+                  amount: '2 oz'
+                }
 });
 
 db.Drink.remove({}, function(err, drinks) {

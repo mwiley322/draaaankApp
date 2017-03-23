@@ -30,6 +30,7 @@ app.get('/templates/:name', function templates(req, res) {
  * JSON API Endpoints
  */
 
+//API CONTROLLER
 app.get('/api', controllers.api.index);
 
 //DRINK CONTROLLERS
@@ -49,7 +50,6 @@ app.get('*', function homepage (req, res) {
  * SERVER *
  **********/
 
-// listen on port 3000
 app.listen(process.env.PORT || 3000, function () {
   console.log('Draaaankin draaaanks on http://localhost:3000/');
 });

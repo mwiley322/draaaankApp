@@ -1,4 +1,5 @@
 module.exports = {
   api: require('./apiController'),
-  drinks: require('./drinkController')
+  drinks: require('./drinkController'),
+  ingredients: require('./ingredientController')
 }
