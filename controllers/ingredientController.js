@@ -8,6 +8,13 @@ function index(req, res) {
   });
 }
 
+// app.get('/api/ingredients', controllers.ingredients.showAll);
+function showAll(req, res) {
+  db.Ingredient.find({}, function(err, ingredients) {
+    res.json(ingredients);
+  });
+}
+
 // POST '/api/drinks/:id/ingredients'
 function create(req, res) {
   db.Drink.findById(req.params.id, function(err, foundDrink) {
@@ -63,6 +70,7 @@ function update(req, res) {
 
 module.exports = {
   index: index,
+  showAll: showAll,
   create: create,
   update: update,
   destroy: destroy
