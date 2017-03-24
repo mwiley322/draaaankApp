@@ -2,7 +2,12 @@
   height: 300px;
 }
 
+
 .formStuff {
   margin-left: 300px;
   margin-right: 300px;
+}
+
+img {
+  max-height: 300px;
 }
