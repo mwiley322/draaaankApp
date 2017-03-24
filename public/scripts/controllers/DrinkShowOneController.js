@@ -13,7 +13,9 @@ angular
 
     function foundOneDrink(drinkData) {
       vm.drink = drinkData.data;
-      console.log('GOT A DRANK!');
+      console.log('GOT A DRANK!', vm.drink);
+      console.log('U GOT SOME INGREDIENTS! ', vm.drink.ingredients);
+      vm.ingredients = vm.drink.ingredients;
     }
 
     function errorFindingOneDrink(err) {

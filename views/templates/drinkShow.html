@@ -1,12 +1,15 @@
 <div class="col s12 m7">
-  <h2 class="header">{{drinkOneCtrl.drink.name}}</h2>
   <div class="card horizontal">
     <div class="card-image">
       <img src="{{drinkOneCtrl.drink.img}}">
     </div>
     <div class="card-stacked">
       <div class="card-content">
-        <p>I am a very simple card. I am good at containing small bits of information.</p>
+
+        <ul class="collection with-header">
+        <li class="collection-header"><h4>{{drinkOneCtrl.drink.name}}</h4></li>
+        <li class="collection-item" ng-repeat="ingredient in drinkOneCtrl.ingredients">{{ingredient.amount}} --- {{ingredient.name}}</li>
+      </ul>
          <a class="waves-effect waves-teal btn-flat">Button</a>
       </div>
     </div>
