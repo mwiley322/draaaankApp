@@ -13,6 +13,7 @@ angular
       }).then(function getAllDrinks(drinkData){
         console.log(drinkData);
         vm.drinks = drinkData.data;
+        console.log(vm.drinks);
       }, function errorGettingAllDrinks (error){
         console.log('There is a problem with getAllDrinks function', error);
       });

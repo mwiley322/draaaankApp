@@ -1,17 +1,17 @@
-<div class="row">
+<div class="row drink-card" ng-repeat = "drink in drinkAllCtrl.drinks">
         <div class="col s12 m6">
             <div class="card">
                 <div class="card-image">
-                    <img src='{{drink.img}}'>
-                    <span class="card-title">Card Title</span>
+                    <img class="responsive-img" src='{{drink.img}}'>
+                    <span class="card-title">Rating</span>
                     <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">Delete</i></a>
-
                 </div>
                 <div class="card-content">
+                  <h3>{{drink.name}}</h3>
                     <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
                 </div>
-                <div class="card-action">
-                    <a href="#">This is a link</a>
+                <div class="card-action right-align">
+                    <a ng-href="drinks/{{drink._id}}">See Recipe</a>
                 </div>
             </div>
         </div>
