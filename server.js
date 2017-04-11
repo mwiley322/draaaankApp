@@ -55,6 +55,6 @@ app.get('*', function homepage (req, res) {
  * SERVER *
  **********/
 
-app.listen(process.env.PORT || 3000, function () {
+app.listen(process.env.PORT || 5000, function () {
   console.log('Draaaankin draaaanks on http://localhost:3000/');
 });
